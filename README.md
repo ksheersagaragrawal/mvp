@@ -18,3 +18,5 @@ Models & APIs used:
                                                                                                                                                  
 Challenges:                                                                                                                                    
 Synchronizing Live API audio streams with structured note generation introduced latency issues. We solved this by decoupling the Q&A and notes pipelines with async queues.    
+
+[Youtube Link](https://www.youtube.com/watch?v=NP_2tABsqD8)
