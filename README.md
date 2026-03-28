@@ -12,10 +12,12 @@ Einstein — Your AI Meeting Partner
   - Recap Video: Missed a meeting? Einstein generates a short, watchable recap video so you never have to sit through a full recording.          
                                                                                                                                                  
   Models & APIs used:                                                                                                                            
-  - Gemini Live API — real-time audio understanding and Q&A during meetings                                                                      
-  - Nano (on-device) — low-latency meeting note generation                                                                                       
-  - Veo — AI-generated recap video summaries              
-  - Gemini 1.5 Pro — structured note formatting and stakeholder digest                                                                           
+  - Gemini Live (gemini-3.1-flash-live-preview) — real-time audio Q&A during meetings
+  - Gemini Nano Banana (nano-banana-pro-preview) — low-latency note generation and transcription                                                 
+  - Veo 2 (veo-2.0-generate-001) — AI-generated recap video summaries                           
+  - Gemini 2.5 Flash (gemini-2.5-flash) — structured Q&A responses and stakeholder digests                                                       
+  - Gemini TTS (gemini-2.5-flash-preview-tts) — Einstein's voice during live meetings                                                            
+  - FastAPI backend, Next.js frontend, Supabase for persistence                                                                           
                                                                                                                                                  
   Challenges:                                                                                                                                    
   Synchronizing Live API audio streams with structured note generation introduced latency issues. We solved this by decoupling the Q&A and notes 
